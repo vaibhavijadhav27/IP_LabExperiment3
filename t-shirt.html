@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Customized T-shirt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+    <style>
+      .center{
+        margin-left:14% ;
+      }
+    </style>
+  </head>
+  
+  <body class="centered-content">
+    <nav class="navbar">
+      <div class="container-xxl">
+
+      </div>
+    </nav>
+
+    <section id="intro">
+      <div class="container-lg">
+        <div class= "row justify-content-center">
+          <div class="col-md-5 text-center text-md-start">
+            <h1>
+              <div class="display-2">My Order</div>
+              <div class="display-5 text-muted">Slogan Tee</div>
+              
+            </h1>
+            <p class="lead my-4 text-muted">You can choose your own tagline which will be printed on the tee, its colour and its size.</p>
+            <a href="#order"><button type="button" class="btn btn-secondary" >Buy Now</button></a>
+
+
+          </div>
+          <div class="col-md-5 text-center">
+            <img class="img-fluid" src="assets/images.jfif" alt= "slogan tee">
+          </div>
+        </div>
+      </div>
+    </section>
+    </br>
+    <hr>
+    <br>
+
+    <h1 class="center display-2" id="order">Place Order</h1>
+    <br>
+    <form class="center" name="myForm" method="put">
+      <label for="tagline"><p class="lead fw-bold text-muted">Choose tagline for your T-shirt:</p></label><br />
+      <input
+        type="text"
+        id="tagline"
+        name="tagline"
+        placeholder="Hello World" 
+      /><br /> <br/>
+
+      <p class="lead fw-bold text-muted">T-shirt color:</p>
+      
+
+      <input type="radio" id="black" name="color" value="black" />
+      <label for="black">Black</label><br />
+      <input type="radio" id="red" name="color" value="red" />
+      <label for="red">Red</label><br />
+      <input type="radio" id="green" name="color" value="green" />
+      <label for="green">Green</label><br />
+      <input type="radio" id="blue" name="color" value="blue" />
+      <label for="blue">Blue</label><br /><br />
+
+      <label for="size">
+        <p class="lead fw-bold text-muted">T-shirt color:</p></label><br />
+      <select name="size" id="size">
+        <option selected="" value="default">Select a size</option>
+        <option value="S">S</option>
+        <option value="M">M</option>
+        <option value="L">L</option>
+        <option value="XL">XL</option></select><br /><br />
+
+
+      <label for="quantity"><p class="lead fw-bold text-muted">Quantity:</p></label><br />
+      <select name="quantity" id="quantity">
+        <option selected="" value="default">Select quantity</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      
+      </select><br /><br />
+
+      <label for="order-date"><p class="lead fw-bold text-muted">Deliver By:</p></label>
+      <input type="date" id="order-date" name="order-date" /><br /><br />
+
+      <label for="name"><p class="lead fw-bold text-muted">Enter your name:</p></label><br />
+      <input type="text" id="name" name="name" /><br /><br />
+
+      <label for="number"><p class="lead fw-bold text-muted">Enter your mobile number:</p></label><br />
+      <input type="text" id="number" name="number" /><br /><br />
+
+      <label for="address"><p class="lead fw-bold text-muted">Enter your address:</p></label><br />
+      <textarea id="address" name="address" rows="5" cols="30"></textarea></br></br>
+        <p class="lead fw-bold text-muted">Choose payment option:</p>
+      <input type="radio" id="card" name="pay" value="card" />
+      <label for="card">Card</label><br />
+      <input type="radio" id="cash" name="pay" value="cash" />
+      <label for="cash on delivery">Cash</label>
+      </br></br>
+      <p class="lead fw-bold text-muted">Price:</p> <span class="lead text-decoration-line-through text-dark  ">Rs. 500</span></br> 
+      <span class="lead fw-bold">Rs. 300
+      </span></p>
+      <div class="p-3 border-start border-success border-5">
+      <input class="btn btn-secondary btn-lg" type="button" name="Submit" value="Submit" onclick="return validate()"/>
+      <input class="btn btn-secondary btn-lg" type="Reset" value="Reset" />
+    </div>
+    </form>
+  
+  </body>
+  <script src="./validate.js"></script>
+</html>
